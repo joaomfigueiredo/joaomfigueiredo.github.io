@@ -4,11 +4,19 @@
   <title>Open GeoJSON in a Map</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   <style>
-    #map { height: 900px; }
+    #map { height: 90vh; }
+    #nav-buttons { text-align: center; margin-bottom: 10px; }
+    #filename { text-align: center; font-weight: bold; margin-bottom: 10px; }
   </style>
 </head>
 <body>
   <div id="map"></div>
+  <div id="nav-buttons">
+    <button id="prev-button">Previous</button>
+    <button id="next-button">Next</button>
+  </div>
+  <div id="filename"></div>
+
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>
